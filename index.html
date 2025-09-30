@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav>
+        <div id="nav-container">
+            <div class="navDiv" id="logo">
+                <img src="./assets/images/fkheaderlogo.svg" alt="Flipkart-logo">
+            </div>
+            <div class="navDiv" id="searchDiv"><i class="ri-search-line"></i><input type="text"
+                    placeholder="Search for Products, Brands and More ">
+            </div>
+            <div class="navDiv" id="navOptionsContainer">
+                <div id="loginMain">
+                    <div id="loginWrapper">
+                        <div id="login" class="navOptions">
+                            <div id="topContainer">
+                                <img id="profileImg" src="./assets/images/profile.svg" alt="">
+                                <p>login</p>
+                                <img id="downArrow" src="./assets/images/download.svg" alt="">
+                            </div>
+                        </div>
+                        <ul id="loginDropdown">
+                            <div id="top">
+                                <span id="newCus">New Customer ?</span>
+                                <span id="singUp">Sing Up</span>
+                            </div>
+                            <li>
+                                <img src="./assets/images/profile.svg" alt="">
+                                My Profile
+                            </li>
+                            <li>
+                                <img src="./assets/images/fkplus.svg" alt="">
+                                Flipkart Plus Zone
+                            </li>
+                            <li>
+                                <img src="./assets/images/orders.svg" alt="">
+                                Orders
+                            </li>
+                            <li>
+                                <img src="./assets/images/wishlist.svg" alt="">
+                                Wishlist
+                            </li>
+                            <li>
+                                <img src="./assets/images/giftCard.svg" alt="">
+                                Giftcards
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="cart" class="navOptions">
+                    <img src="./assets/images/cart.svg" alt="">
+                    <p>Cart</p>
+                </div>
+                <div id="seller" class="navOptions">
+                    <img src="./assets/images/Store.svg" alt="">
+                    <p>Become a Seller</p>
+                </div>
+                <div id="more" class="navOptions">
+                    <i class="ri-more-2-line"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="category-strip">
+        <div id="strip-container">
+            <div class="category">
+                <img src="./assets/images/minutes-icon.webp" alt="">
+                <p>Minutes</p>
+            </div>
+            <div class="category">
+                <img src="./assets/images/phone-icon.webp" alt="">
+                <p>Mobile &amp; Tablets</p>
+
+            </div>
+            <div class="dropdown-container">
+                <div class="category" id="fashion">
+                    <img src="./assets/images/fashion-icon.webp" alt="">
+                    <span>
+                        <p>Fashion </p>
+                        <i class="ri-arrow-down-wide-line"></i>
+                    </span>
+                </div>
+                <ul class="drop-down-menu" id="f-position">
+                    <span class="first-span">
+                        <li class="main-li">
+                            <div class="li-container">Men's Top Wear<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu" id="f-visible">
+                                <span class="second-heading">More in Men's Wear</span>
+                                <li>All</li>
+                                <li>Men's T-shirt</li>
+                                <li>Men's Casual Shirts</li>
+                                <li>Men's Formal Shits</li>
+                                <li>Men's Kurtas</li>
+                                <li>Men's Ethnic Sets</li>
+                                <li>Men's Blazers</li>
+                                <li>Men's Raincoat</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Suit</li>
+                                <li>Men's Fabrics</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Men's Bottom Wear<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Men's Bottom Wear</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Men's Footwear<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Men's Footwear</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Women's Ethnic<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Women's Ethnic Wear</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Women's Footwear<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Women's Footwear</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Watchs and Accessories<i class="ri-arrow-right-wide-line"></i>
+                            </div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Watchs and Accessories</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Women Western<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Women Western</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Bags, Suitcases &amp; Suitcases<i
+                                    class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Bags, Suitcases &amp; Suitcases</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="li-container">kid<i class="ri-arrow-right-wide-line"></i></div>
+                        </li>
+                        <li>
+                            <div class="li-container">Essentials<i class="ri-arrow-right-wide-line"></i></div>
+                        </li>
+                        <li>
+                            <div class="li-container">Winter<i class="ri-arrow-right-wide-line"></i></div>
+                        </li>
+                    </span>
+                    <span class="second-span">
+
+                    </span>
+                </ul>
+            </div>
+            <div class="dropdown-container">
+                <div class="category" id="electronics">
+                    <img src="./assets/images/electronics-icon.webp" alt="">
+                    <span>
+                        <p>Electronics </p>
+                        <i class="ri-arrow-down-wide-line"></i>
+                    </span>
+                </div>
+                <ul class="drop-down-menu" id="e-position">
+                    <span class="first-span">
+                        <li class="main-li">
+                            <div class="li-container">Men's Top Wear<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu" id="e-visible">
+                                <span class="second-heading">More in Men's Wear</span>
+                                <li>All</li>
+                                <li>Men's T-shirt</li>
+                                <li>Men's Casual Shirts</li>
+                                <li>Men's Formal Shits</li>
+                                <li>Men's Kurtas</li>
+                                <li>Men's Ethnic Sets</li>
+                                <li>Men's Blazers</li>
+                                <li>Men's Raincoat</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Suit</li>
+                                <li>Men's Fabrics</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Men's Bottom Wear<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Men's Bottom Wear</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Men's Footwear<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Men's Footwear</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Women's Ethnic<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Women's Ethnic Wear</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Women's Footwear<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Women's Footwear</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Watchs and Accessories<i class="ri-arrow-right-wide-line"></i>
+                            </div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Watchs and Accessories</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Women Western<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Women Western</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Bags, Suitcases &amp; Suitcases<i
+                                    class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Bags, Suitcases &amp; Suitcases</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="li-container">kid<i class="ri-arrow-right-wide-line"></i></div>
+                        </li>
+                        <li>
+                            <div class="li-container">Essentials<i class="ri-arrow-right-wide-line"></i></div>
+                        </li>
+                        <li>
+                            <div class="li-container">Winter<i class="ri-arrow-right-wide-line"></i></div>
+                        </li>
+                    </span>
+                    <span class="second-span">
+
+                    </span>
+                </ul>
+            </div>
+
+            <div class="dropdown-container">
+                <div class="category" id="furniture">
+                    <img src="./assets/images/furniture-icon.png" alt="">
+                    <span>
+                        <p>Home &amp; Furniture </p>
+                        <i class="ri-arrow-down-wide-line"></i>
+                    </span>
+
+                </div>
+                <ul class="drop-down-menu" id="furniture-position">
+                    <span class="first-span">
+                        <li class="main-li">
+                            <div class="li-container">Men's Top Wear<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu" id="h-visible">
+                                <span class="second-heading">More in Men's Wear</span>
+                                <li>All</li>
+                                <li>Men's T-shirt</li>
+                                <li>Men's Casual Shirts</li>
+                                <li>Men's Formal Shits</li>
+                                <li>Men's Kurtas</li>
+                                <li>Men's Ethnic Sets</li>
+                                <li>Men's Blazers</li>
+                                <li>Men's Raincoat</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Suit</li>
+                                <li>Men's Fabrics</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Men's Bottom Wear<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Men's Bottom Wear</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Men's Footwear<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Men's Footwear</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Women's Ethnic<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Women's Ethnic Wear</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Women's Footwear<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Women's Footwear</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Watchs and Accessories<i class="ri-arrow-right-wide-line"></i>
+                            </div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Watchs and Accessories</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Women Western<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Women Western</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Bags, Suitcases &amp; Suitcases<i
+                                    class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Bags, Suitcases &amp; Suitcases</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="li-container">kid<i class="ri-arrow-right-wide-line"></i></div>
+                        </li>
+                        <li>
+                            <div class="li-container">Essentials<i class="ri-arrow-right-wide-line"></i></div>
+                        </li>
+                        <li>
+                            <div class="li-container">Winter<i class="ri-arrow-right-wide-line"></i></div>
+                        </li>
+                    </span>
+                    <span class="second-span">
+
+                    </span>
+                </ul>
+            </div>
+
+            <div class="category">
+                <img src="./assets/images/TV-and-appliances.jpg" alt="">
+                <p>TVs &amp; Appliances</p>
+            </div>
+            <div class="category">
+                <img src="./assets/images/flight-booking.webp" alt="">
+                <p>Flight Bookings</p>
+            </div>
+            <div class="dropdown-container">
+                <div class="category" id="beauty">
+                    <img src="./assets/images/beauty.png" alt="">
+                    <span>
+                        <p>Beauty , Food... </p>
+                        <i class="ri-arrow-down-wide-line"></i>
+                    </span>
+                </div>
+                <ul class="drop-down-menu" id="b-position">
+                    <span class="first-span">
+                        <li class="main-li">
+                            <div class="li-container">Men's Top Wear<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu" id="b-visible">
+                                <span class="second-heading">More in Men's Wear</span>
+                                <li>All</li>
+                                <li>Men's T-shirt</li>
+                                <li>Men's Casual Shirts</li>
+                                <li>Men's Formal Shits</li>
+                                <li>Men's Kurtas</li>
+                                <li>Men's Ethnic Sets</li>
+                                <li>Men's Blazers</li>
+                                <li>Men's Raincoat</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Suit</li>
+                                <li>Men's Fabrics</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Men's Bottom Wear<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Men's Bottom Wear</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Men's Footwear<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Men's Footwear</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Women's Ethnic<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Women's Ethnic Wear</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Women's Footwear<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Women's Footwear</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Watchs and Accessories<i class="ri-arrow-right-wide-line"></i>
+                            </div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Watchs and Accessories</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Women Western<i class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Women Western</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li class="main-li">
+                            <div class="li-container">Bags, Suitcases &amp; Suitcases<i
+                                    class="ri-arrow-right-wide-line"></i></div>
+                            <ul class="inner-menu">
+                                <span class="second-heading">More in Bags, Suitcases &amp; Suitcases</span>
+                                <li>All</li>
+                                <li>Men's Jeans</li>
+                                <li>Men's Trousers</li>
+                                <li>Men's Trakpants</li>
+                                <li>Men's Shotrs</li>
+                                <li>Men's Cargos</li>
+                                <li>Men's Threefourths</li>
+                                <li>Men's Pyjamas&amp;Loungepants</li>
+                                <li>Men's Windcheaters</li>
+                                <li>Men's Dhoti</li>
+                                <li>Men's Ethnic Pyjama</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="li-container">kid<i class="ri-arrow-right-wide-line"></i></div>
+                        </li>
+                        <li>
+                            <div class="li-container">Essentials<i class="ri-arrow-right-wide-line"></i></div>
+                        </li>
+                        <li>
+                            <div class="li-container">Winter<i class="ri-arrow-right-wide-line"></i></div>
+                        </li>
+                    </span>
+                    <span class="second-span">
+
+                    </span>
+                </ul>
+            </div>
+
+
+            <div class="category">
+                <img src="./assets/images/groceries.png" alt="">
+                <p>Groceries</p>
+            </div>
+        </div>
+    </div>
+    <div id="banner-container">
+        <div id="banner-changer-container">
+            <div class="change-btn" id="forward"><i class="ri-arrow-left-wide-line"></i></div>
+            <div class="change-btn" id="backward"><i class="ri-arrow-right-wide-line"></i></div>
+        </div>
+        <div id="banner-wrap">
+            <img src="./assets/images/banner-1.jpeg" alt="">
+            <img src="./assets/images/banner-2.jpg" alt="">
+            <img src="./assets/images/banner-3.webp" alt="">
+            <img src="./assets/images/banner-4.jpeg" alt="">
+            <img src="./assets/images/banner-5.jpeg" alt="">
+            <img src="./assets/images/banner-6.jpg" alt="">
+            <img src="./assets/images/banner-7.png" alt="">
+            <img src="./assets/images/banner-8.jpeg" alt="">
+        </div>
+        <div id="banner-progress-bar-container">
+            <div class="dot">
+                <div class="inner"></div>
+            </div>
+            <div class="dot">
+                <div class="inner"></div>
+            </div>
+            <div class="dot">
+                <div class="inner"></div>
+            </div>
+            <div class="dot">
+                <div class="inner"></div>
+            </div>
+            <div class="dot">
+                <div class="inner"></div>
+            </div>
+            <div class="dot">
+                <div class="inner"></div>
+            </div>
+            <div class="dot">
+                <div class="inner"></div>
+            </div>
+            <div class="dot">
+                <div class="inner"></div>
+            </div>
+        </div>
+    </div>
+    <div id="top-deals-container">
+        <div id="top-deals">
+            <h1>Top Deals</h1>
+            <div id="deals">
+                <div class="card">
+                    <img src="./assets/images/fan&geyser.webp" alt="" class="deal-img">
+                    <div>
+                        <p class="deal-title">Fans & Gersers</p>
+                        <h4 class="deal-price">From &#8377;999</h4>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="./assets/images/home-essentials.webp" alt="" class="deal-img">
+                    <div>
+                        <p class="deal-title">Home Essentials</p>
+                        <h4 class="deal-price">Shop Now</h4>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="./assets/images/projector.webp" alt="" class="deal-img">
+                    <div>
+                        <p class="deal-title">Projectors</p>
+                        <h4 class="deal-price">From &#8377;6990</h4>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/speakers.webp" alt="" class="deal-img">
+                    <div>
+                        <p class="deal-title">Best Selling Mobile S...</p>
+                        <h4 class="deal-price">From &#8377;499*</h4>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="./assets/images/monitors.webp" alt="" class="deal-img">
+                    <div>
+                        <p class="deal-title">Monitors</p>
+                        <h4 class="deal-price">From &#8377;6599</h4>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="./assets/images/smartwatch.webp" alt="" class="deal-img">
+                    <div>
+                        <p class="deal-title">Fasttrack Smartwatch</p>
+                        <h4 class="deal-price">From &#8377;999</h4>
+                    </div>
+
+                </div>
+                <div class="change-btn next" id="backward"><i class="ri-arrow-right-wide-line"></i></div>
+            </div>
+        </div>
+        <div id="promotion-sec">
+            <img src="./assets/images/sub-promotion-banner.webp" alt="">
+        </div>
+    </div>
+    <div id="bottom-banner-container">
+        <img src="./assets/images/floor-furnishing.webp" alt="">
+        <img src="./assets/images/mixers.webp" alt="">
+        <img src="./assets/images/washing-mechine.webp" alt="">
+    </div>
+    <footer id="footer">
+        <div id="top-footer">
+            <div id="about-sec">
+                <div class="about-divs">
+                    <div class="heading-div">ABOUT</div>
+                    <p>Contact Us</p>
+                    <p>About Us</p>
+                    <p>Careers</p>
+                    <p>Flipkat Stories</p>
+                    <p>Press</p>
+                    <p>Corporate Information</p>
+                </div>
+                <div class="about-divs">
+                    <div class="heading-div">Group Companies</div>
+                    <p>Myntra</p>
+                    <p>Cleartrip</p>
+                    <p>Shopsy</p>
+                </div>
+                <div class="about-divs">
+                    <div class="heading-div">Help</div>
+                    <p>Payments</p>
+                    <p>Shipping</p>
+                    <p>Cancellation &amp; Returns</p>
+                    <p>FAQ</p>
+                </div>
+                <div class="about-divs">
+                    <div class="heading-div">Consumer Policy</div>
+                    <p>Cancellation &amp; Returns</p>
+                    <p>Terms of Use</p>
+                    <p>Security</p>
+                    <p>Privacy</p>
+                    <p>Sitemap</p>
+                    <p>Grievance Redressal</p>
+                    <p>EPR compliance</p>
+                </div>
+            </div>
+            <div id="reach-sec">
+                <div class="reach-card">
+                    <div class="reach-heading">Mail Us:</div>
+                    <p>Flipkar Internet Private Limited,</p>
+                    <p>Buildings Alyssa, Begonia &amp;</p>
+                    <p>Clove Embassy Tech Village,</p>
+                    <p>Outer Ring Road Devarabeesanahalli Village,</p>
+                    <p>Bengaluru, 560103,</p>
+                    <p>Karnataka, India</p>
+                    <div id="social">
+                        <div class="social-heading">Socials:</div>
+                        <div id="social-icons">
+                            <img src="./assets/images/fb.svg" alt="">
+                            <img src="./assets/images/x.svg" alt="">
+                            <img src="./assets/images/YT.svg" alt="">
+                            <img src="assets/images/IG.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="reach-card">
+                    <div class="reach-heading">Registered Office Address:</div>
+                    <p>Flipkar Internet Private Limited,</p>
+                    <p>Buildings Alyssa, Begonia &amp;</p>
+                    <p>Clove Embassy Tech Village,</p>
+                    <p>Outer Ring Road Devarabeesanahalli Village,</p>
+                    <p>Bengaluru, 560103,</p>
+                    <p>Karnataka, India</p>
+                    <p> CIN: U51109KA2012PTC066107</p>
+                    <p>Telephone: <span class="blue">044-45614700 </span>/ <span class="blue">044-67415800 </span> </p>
+                </div>
+            </div>
+        </div>
+        <div id="bottom-footer">
+            <div class="f-card">
+                <img src="./assets/images/seller.svg" alt="">
+                <p>Become a Seller</p>
+            </div>
+            <div class="f-card">
+                <img src="./assets/images/advertise.svg" alt="">
+                <p>Advertise</p>
+            </div>
+            <div class="f-card">
+                <img src="./assets/images/gift-cards.svg" alt="">
+                <p>Gift Cards</p>
+            </div>
+            <div class="f-card">
+                <img src="./assets/images/help-centre.svg" alt="">
+                <p>Help Center</p>
+            </div>
+            <div id="copy-right">
+                @2007-2025 Flipkart.com
+            </div>
+            <div id="payment-method">
+                <img src="./assets/images/payment-method-img-1.svg" alt="">
+            </div>
+        </div>
+    </footer>
+    <script src="/script.js">
+
+    </script>
+</body>
+
+</html>
