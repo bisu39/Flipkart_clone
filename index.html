@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flipkart Clone</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style-desktop.css">
+    <link rel="stylesheet" href="style-mobile.css" media="screen and (max-width:720px)">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
 <body>
     <nav>
         <div id="nav-container">
+            <div id="hamMenu">
+                <img src="./assets/images/hamMenu.svg" alt="">
+            </div>
             <div class="navDiv" id="logo">
                 <img src="./assets/images/fkheaderlogo.svg" alt="Flipkart-logo">
             </div>
@@ -19,7 +23,7 @@
                     placeholder="Search for Products, Brands and More ">
             </div>
             <div class="navDiv" id="navOptionsContainer">
-                <div id="loginMain">
+                <div id="loginManu">
                     <div id="loginWrapper">
                         <div id="login" class="navOptions">
                             <div id="topContainer">
@@ -55,6 +59,7 @@
                             </li>
                         </ul>
                     </div>
+
                 </div>
 
                 <div id="cart" class="navOptions">
@@ -68,6 +73,14 @@
                 <div id="more" class="navOptions">
                     <i class="ri-more-2-line"></i>
                 </div>
+            </div>
+            <div id="mobMenu">
+                <img src="./assets/images/mobile-app.svg" alt="">
+                <div id="topContainer">
+                    <img id="profileImg" src="./assets/images/profile.svg" alt="">
+                    <p>login</p>
+                </div>
+                <img src="./assets/images/cart.svg" alt="">
             </div>
         </div>
     </nav>
@@ -805,6 +818,9 @@
                         <p class="deal-title">Fans & Gersers</p>
                         <h4 class="deal-price">From &#8377;999</h4>
                     </div>
+                    <div class="mobArrow">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
 
                 </div>
                 <div class="card">
@@ -813,7 +829,9 @@
                         <p class="deal-title">Home Essentials</p>
                         <h4 class="deal-price">Shop Now</h4>
                     </div>
-
+                    <div class="mobArrow">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="./assets/images/projector.webp" alt="" class="deal-img">
@@ -821,7 +839,9 @@
                         <p class="deal-title">Projectors</p>
                         <h4 class="deal-price">From &#8377;6990</h4>
                     </div>
-
+                    <div class="mobArrow">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
                 </div>
 
                 <div class="card">
@@ -830,7 +850,9 @@
                         <p class="deal-title">Best Selling Mobile S...</p>
                         <h4 class="deal-price">From &#8377;499*</h4>
                     </div>
-
+                    <div class="mobArrow">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="./assets/images/monitors.webp" alt="" class="deal-img">
@@ -838,7 +860,9 @@
                         <p class="deal-title">Monitors</p>
                         <h4 class="deal-price">From &#8377;6599</h4>
                     </div>
-
+                    <div class="mobArrow">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="./assets/images/smartwatch.webp" alt="" class="deal-img">
@@ -846,7 +870,9 @@
                         <p class="deal-title">Fasttrack Smartwatch</p>
                         <h4 class="deal-price">From &#8377;999</h4>
                     </div>
-
+                    <div class="mobArrow">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
                 </div>
                 <div class="change-btn next" id="backward"><i class="ri-arrow-right-wide-line"></i></div>
             </div>
@@ -858,7 +884,10 @@
     <div id="bottom-banner-container">
         <img src="./assets/images/floor-furnishing.webp" alt="">
         <img src="./assets/images/mixers.webp" alt="">
-        <img src="./assets/images/washing-mechine.webp" alt="">
+        <img src="./assets/images/washing-mechine.webp"  alt="">
+        <img src="./assets/images/washing-mechine.webp" class="mobCard" alt="">
+        <img src="./assets/images/floor-furnishing.webp" class="mobCard" alt="">
+        <img src="./assets/images/mixers.webp" class="mobCard" alt="">
     </div>
     <footer id="footer">
         <div id="top-footer">

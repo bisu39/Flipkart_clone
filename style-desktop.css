@@ -1,7 +1,3 @@
-/* @font-face {
-    font-family: Riona;
-    src: url(./assets/Font/fonnts.com-RionaSans-Regular.otf);
-} */
 
 * {
     margin: 0;
@@ -18,7 +14,6 @@ body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    /* font-family: Riona; */
 }
 
 body {
@@ -34,6 +29,9 @@ nav {
     top: 0;
     z-index: 99;
 
+}
+#hamMenu {
+    display: none;
 }
 
 #logo {
@@ -197,8 +195,11 @@ nav {
     height: 18px;
 }
 
-#loginMain {
+#loginManu {
     position: relative;
+}
+#mobMenu {
+    display: none;
 }
 
 #top {
@@ -601,6 +602,12 @@ ul.inner-menu li {
     align-items: center;
     margin-top: 20px;
 
+}
+.mobArrow i {
+    display: none;
+}
+.mobCard{
+    display: none;
 }
 
 .card div {

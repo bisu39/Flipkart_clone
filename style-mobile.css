@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+#hamMenu {
+    display: block;
+    cursor: pointer;
+}
+
+#logo {
+    margin-left: -30.3vw;
+}
+
+#searchDiv {
+    display: none;
+}
+
+#navOptionsContainer {
+    display: none;
+}
+
+#mobMenu {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+nav {
+    height: 8vh;
+}
+#mobSearch {
+    width: 56%;
+    height: 53%;
+    background-color: #f0f5ff;
+    border-radius: 7px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/* Category strip */
+#banner-container {
+    height: 76px;
+}
+
+#strip-container {
+    width: 100%;
+    gap: 19px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.category p {
+    font-size: 11px;
+}
+
+.category img {
+    height: 50px;
+    width: 50px;
+}
+
+.drop-down-menu {
+    display: none;
+}
+
+.category:hover p {
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.category i {
+    display: none;
+}
+
+.deal-price {
+    font-size: 12px;
+}
+
+.deal-title {
+    font-size: 12px;
+}
+
+
+/* Banner section */
+#banner-changer-container {
+    display: none;
+}
+
+#banner-progress-bar-container {
+    gap: 5px;
+}
+
+#promotion-sec {
+    display: none;
+}
+
+#top-deals {
+    width: 100%;
+    overflow: hidden;
+}
+
+#top-deals h1 {
+    font-size: 18px;
+}
+
+#deals {
+    flex-direction: column;
+}
+
+.card {
+    flex-direction: row;
+    gap: 33px;
+    width: 84%;
+    justify-content: space-between;
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 5px;
+}
+
+.mobArrow i {
+    display: inline-block;
+
+}
+
+.mobCard {
+    display: block;
+}
+
+.deal-img {
+    height: 30px;
+    width: 30px;
+}
+
+#bottom-banner-container img {
+    width: 32%;
+    height: 48%;
+}
+
+#bottom-banner-container {
+    flex-wrap: wrap;
+}
+
+/* Footer */
+#footer {
+    height: 530px;
+}
+
+#about-sec,
+#reach-sec {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.reach-heading,
+.heading-div,
+.social-heading {
+    font-size: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.about-divs p,
+.reach-card {
+    font-size: 10px;
+}
+
+#reach-sec {
+    border-left: none;
+}
+#bottom-footer {
+    flex-wrap: wrap;
+}
+.f-card p {
+    font-size: 10px;
+}
+#copy-right {
+    font-size: 10px;
+}
+.mobSearch {
+display: block !important;}
